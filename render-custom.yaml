@@ -6,7 +6,7 @@ services:
     url: twentycrm/twenty:latest
   dockerCommand: "sh -c ./scripts/render-run.sh"
   autoDeploy: false
-  plan: standard
+  plan: free
   envVars:
     - key: FRONT_BASE_URL
       fromService:
@@ -43,7 +43,7 @@ services:
     url: twentycrm/twenty:latest
   dockerCommand: "sh -c ./scripts/render-worker.sh"
   autoDeploy: false
-  plan: standard
+  plan: free
   envVars:
     - key: FRONT_BASE_URL
       fromService:
